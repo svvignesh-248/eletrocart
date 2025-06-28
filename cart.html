@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVV-ElectronicAccessories IN</title>
+    <link rel="icon" href="sv.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+  <style>
+    .cart-item {
+      border: 1px solid gray;
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .cart-item img {
+      width: 100px;
+      margin-right: 20px;
+    }
+    #cart
+    {
+        background-color: rgb(17, 245, 245);
+        color: rgb(27, 7, 58);
+        padding: 10px;
+        font-size: medium;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+    #cart:hover{
+        background: linear-gradient(45deg, #0553e6, #4fb1f3);
+        box-shadow: 0 8px 15px rgba(1, 20, 1, 0.3);
+        transform: scale(1.05);
+    }
+    #gap{
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+          <h1 id="h1"><span>SVV</span> <span>E</span>lectroCart</h1>
+          <ul id="ul-1">
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./product.html"><li>Product</li></a>
+            <select id="select">
+                <option>Category</option>
+                <option>Printer</option>
+                <option>Mobile Phone</option>
+                <option>AC</option>
+                <option>TV</option>
+                <option>Laptop</option>
+                <option>Headphones</option>
+                <option>USB Stick</option>
+                <option>Fridge</option>
+                <option>Digital Cameras</option>
+            </select>
+            <a><li>About</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./cart.html"><li>Cart🛒</li></a>
+          </ul>
+          <ul id="ul-2">
+            <a href="./login.html"><button id="lbtn">Login</button></a>
+            <a href="./register.html"><button id="lbtn">Register</button></a>
+          </ul>
+          <div class="sidebar">
+            <i class="fa-solid fa-bars" onclick="opennav()"></i>
+        </div>
+        </nav>
+                <!-- side nav bar -->
+                <div id="sidenav">
+                  <div class="mark">
+                    <i class="fa-solid fa-xmark" onclick="closenav()"></i>
+                </div>
+                  <ul id="ul-1">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./product.html"><li>Product</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="./contact.html"><li>contact</li></a>
+                    <a href="./cart.html"><li>Cart🛒</li></a>
+                  </ul>
+                  <ul id="ul-2">
+                    <a href="./login.html"><button id="lbtn">Login</button></a>
+                    <a href="./register.html"><button id="lbtn">Rigester</button></a>
+                  </ul>
+                    
+                </div>
+    </header>
+    <center>
+  <h1 style="color:darkblue" id="gap">Your Cart Items</h1>
+  <div id="cart-container"></div>
+  <div id="total"></div>
+  <button id="cart"onclick="checkout()" >Check Out to Proceed</button>
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("cart-container");
+    const totalDiv = document.getElementById("total");
+
+    let total = 0;
+
+    if (cart.length === 0) {
+      container.innerHTML = "<h3>Your cart is empty.</h3>";
+      document.getElementById("checkout-btn").style.display = "none";
+    } else {
+      cart.forEach(item => {
+        container.innerHTML += `
+          <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+              <h3>${item.name}</h3>
+              
+              <strong>Price: ₹${item.price}</strong>
+            </div>
+          </div>
+        `;
+        total += item.price;
+      });
+
+      totalDiv.innerHTML = `Total Amount: ₹${total}`;
+    }
+
+    function checkout() {
+      alert("Thank you for your order! Proceeding to payment.");
+    }
+  </script>
+  <button onclick="clearCart()" id="cart">Clear Cart</button>
+<script>
+  function clearCart() {
+    localStorage.removeItem("cart");
+    location.reload();
+  }
+</script>
+<script src="./sidenav.js"></script>
+</center>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVV-ElectronicAccessories IN</title>
+    <link rel="icon" href="sv.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./product_fix.css">
+    
+</head>
+<body>
+    <header>
+        <nav id="nav">
+          <h1 id="h1"><span>SVV</span> <span>E</span>lectroCart</h1>
+          <ul id="ul-1">
+            <a href="./index.html"><li>Home</li></a>
+            <a><li>Product</li></a>
+            <select id="select">
+                <option>Category</option>
+                <option>Printer</option>
+                <option>Mobile Phone</option>
+                <option>AC</option>
+                <option>TV</option>
+                <option>Laptop</option>
+                <option>Headphones</option>
+                <option>USB Stick</option>
+                <option>Fridge</option>
+                <option>Digital Cameras</option>
+            </select>
+            <a href="./about.html"><li>About</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+            <a href="./cart.html"><li>Cart🛒</li></a>
+          </ul>
+          <ul id="ul-2">
+            <a href="./login.html"><button id="lbtn">Login</button></a>
+            <a href="./register.html"><button id="lbtn">Register</button></a>
+          </ul>
+          <div class="sidebar" >
+            <i class="fa-solid fa-bars" onclick="opennav()"></i>
+        </div>
+        </nav>
+        <input type="text" placeholder="Search" id="sinp"><input type="button" value="Search" id="sbtn">
+                <!-- side nav bar -->
+                <div id="sidenav">
+                    <div class="mark">
+                      <i class="fa-solid fa-xmark" onclick="closenav()"></i>
+                  </div>
+                    <ul id="ul-1">
+                      <a href="./index.html"><li>Home</li></a>
+                      <a href="./product.html"><li>Product</li></a>
+                      <a href="./about.html"><li>About</li></a>
+                      <a href="./contact.html"><li>Contact</li></a>
+                      <a href="./cart.html"><li>Cart🛒</li></a>
+                    </ul>
+                    <ul id="ul-2">
+                      <a href="./login.html"><button id="lbtn">Login</button></a>
+                      <a href="./register.html"><button id="lbtn">Register</button></a>
+                    </ul>
+                      
+                  </div>
+    </header>
+    
+    <section id="psection">
+        <h2>PRODUCT</h2>
+        <hr>
+        <center>
+        <div class="pcontainer">
+            <div class="iphone">
+                <img src="./img/vivo.png">
+                <h3>Mobile Phones</h3>
+                <p>Vivo Y29 5G</p>
+                <em>Rs.18,499/=</em><button class="buy-btn" onclick="showDetails('Vivo Y29 5G', 18499, './img/vivo.png', '50MP Camera 8GB RAM')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/digiCam.png" height="100px" width="100px">
+                <h3>Digital Camera</h3>
+                <p>Canon Latest FullHD Camera</p>
+                <em>Rs.6,990/=</em><button class="buy-btn" onclick="showDetails('Digital Camera', 6990, './img/digiCam.png', 'Canon Latest FullHD Camera')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/hp-laptop.jpg">
+                <h3>Laptop</h3>
+                <p>HP Gen8 i5 Processor</p>
+                <em>Rs.38,000/=</em><button class="buy-btn" onclick="showDetails('Laptop', 38000, './img/hp-Laptop.jpg', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/ipadpro13.jpg">
+                <h3>iPad</h3>
+                <p>iPad 13 Pro</p>               
+                <em>Rs.22,999/=</em><button class="buy-btn" onclick="showDetails('iPad', 22999, './img/ipadpro13.jpg', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/appewatchseries9.jfif">
+                <h3>Smart Watch</h3>
+                <p>Apple Watch 9 Series</p>                
+                <em>Rs.9,449/=</em><button class="buy-btn" onclick="showDetails('Smart Watch', 9449, './img/applewatchseries9.jfif', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/sony1.jpg" width="150px" height="200px">
+                <h3>Android TV</h3>
+                <p>Sony 55"inch 4K LED TV</p>
+                <em>Rs.39,999/=</em><button class="buy-btn" onclick="showDetails('Android TV', 39999, './img/sony1.jpg', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/printer.jpg">
+                <h3>Printer</h3>
+                <p>Epson L3250 Series</p>
+                <em>Rs.11,999</em><button class="buy-btn" onclick="showDetails('Printer', 11999, './img/printer.jpg', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+            <div class="iphone">
+                <img src="./img/headset1.png">
+                <h3>Headphone</h3>
+                <p>HP H200 Wireless Headset</p>
+                <em>Rs.1,499/=</em><button class="buy-btn" onclick="showDetails('Headphone', 1499, './img/headset1.png', 'HP Gen8 i5 Processor')">BUY</button>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sublaptop">
+                <div class="texta">
+                    <h3>Best HP Laptops</h3>
+                    <p><u>Latest Collection</u></p>
+                    <em>Up To 30% off</em><br>
+                    <button>Shop Now</button>
+                </div>
+                <div class="imga">
+                     <img src="./img/hp-laptop.jpg" height="150px" width="180px">
+                </div>
+            </div>
+            <div class="sublaptop">
+                <div class="texta">
+                    <h3>Best Headphones</h3>
+                    <p><u>Latest Collection</u></p>
+                    <em>Up To 60% off</em><br>
+                    <button>Shop Now</button>
+                </div>
+                <div class="imga">
+                     <img src="./img/headset1.png" height="150px" width="200px">
+                </div>
+            </div>
+        </div>
+      </center>
+    </section> 
+    
+    <section id="section-2">
+        <div class="home-page">
+          <div class="imagearea">
+            <img src="./img/gadgets.jpg" >
+           </div>
+          <div class="textarea">
+           <h1 id="htah">Electronic Gadget<br>UP To <span>65%</span> Off</h1>
+           <p>Limited Offer..Quickly Purchase Now!</p>
+           <button>Shop Now</button>
+          </div>
+          <div class="imagearea">
+            <img src="./img/gadgets.jpg" >
+           </div>
+       </div>
+      </section>
+      <section id="p-2section">
+        <div class="p2section">
+            <div class="pro">
+                <img src="./img/wm1.png" height="200px" width="200px">
+                <h3>Washing Machine</h3>
+                <p>Godrich 8.5Kg Semi-Automatic</p>
+                <em>Rs.12,000/=</em><button class="buy-btn" onclick="showDetails('Washing Machine', 12000, './img/wm1.png', 'Godrich Washing Machine 8.5Kg Semi-Automatic ')">BUY</button>
+            </div>
+            <div class="pro">
+                <img src="./img/ac1.jpg" height="200px" width="200px">
+                <h3>AC</h3>
+                <p>Whirlpool 1.5 Ton AC<br>(1 Year Warranty)</p>
+                <em>Rs.11,080/=</em><button class="buy-btn" onclick="showDetails('Ac', 11080, './img/ac1.jpg', 'Whirlpool 1.5 Ton AirConditioner')">BUY</button>
+            </div>
+            <div class="pro">
+                <img src="./img/mcro1.jpg" height="200px" width="200px">
+                <h3>Microwave Oven</h3>
+                <p>LG 32Ltr Oven</p>
+                <em>Rs.8,000/=</em><button class="buy-btn" onclick="showDetails('Microwave Oven', 8000, './img/mcro1.jpg', 'LG 32Ltr Microwave Oven ')">BUY</button>
+
+            </div>
+            <div class="pro">
+                <img src="./img/fridge1.jpg" height="200px" width="200px">
+                <h3>Refrigerator</h3>
+                <p>LG 260 L Inverter 3 Star</p>
+                <em>Rs.16,000/=</em><button class="buy-btn" onclick="showDetails('Refrigerator', 16000, './img/fridge1.jpg', 'LG 260 L Inverter 3 Star')">BUY</button>
+            </div>
+        </div>
+        <div class="p2section" >
+            <div class="pro">
+                <img src="./img/fan1.jpg" height="200px" width="200px">
+                <h3>Fan</h3>
+                <p>High speed Fan</p>
+                <em>Rs.1,200/=</em><button class="buy-btn" onclick="showDetails('Fan', 1200, './img/fan1.jpg', 'High speed Electronic Fan')">BUY</button>
+
+            </div>
+            <div class="pro">
+                <img src="./img/keybrd.jpg" height="200px" width="200px">
+                <h3>Keyboard</h3>
+                <p>Multilingual Wired USB Keyboard</p>
+                <em>Rs.419/=</em><button class="buy-btn" onclick="showDetails('Keyboard', 419, './img/keybrd.jpg', 'Multilingual Wired USB Keyboard')">BUY</button>
+
+            </div>
+            <div class="pro">
+                <img src="./img/usb1.png" height="200px" width="150px">
+                <h3>USB stick</h3>
+                <p>Sandisk USB 64GB</p>
+                <em>Rs.519/=</em><button class="buy-btn" onclick="showDetails('USB PenDrive', 519, './img/usb1.png', 'Sandisk USB Pendrive 64GB')">BUY</button>
+            </div>
+            <div class="pro">
+                <img src="./img/electS.jpg" height="200px" width="200px">
+                <h3>Electric Stove</h3>
+                <p>Electric Cooktop single burner</p>
+                <em>Rs.10,710/=</em><button class="buy-btn" onclick="showDetails('Electric Stove', 10710, './img/electroS.jpg', 'Electric Cooktop single burner')">BUY</button>
+            </div>
+        </div>
+      </section>
+    <footer>
+      <div class="fcontainer">
+        <div class="el">
+          <h2>SVVElectroCart</h2>
+          <p>153 PKSA Arumugam Road,</p><p>Sivakasi,</p><p>Tamil Nadu.</p>
+          <p><b>Phone : </b>+91 70928 46686</p><p><b>E-Mail :</b>svvelectronics@gmail.com</p>
+        </div>
+        <div class="ul">
+          <h2>Useful Links</h2>
+          <p>Home</p>
+           <p>About Us</p>
+            <p>Services</p>
+            <p>Terms of service</p><p>Privacy policy</p>
+        </div>
+      <div class="os">
+        <h2>Our Service</h2>
+        <p>Smartphones & Accessories</p><p>Laptops</p><p>Gaming Consoles</p><p>Headphones & Speakers</p><p>Smart Home Devices</p>
+      </div>
+      <div class="osn">
+        <h2>Our Social Networks</h2>
+          <p>Follow us for the Latest tech deals & updates.<br> Join our Community and Stay connected.
+          </p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-skype">
+          </i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+      </div>
+      </div>
+    <div class="fp">
+    <hr>
+    <center><em class="f">Copyright <b>SVVElectroCart </b>@2025 All Rights Reserved.</em> </center>
+   <hr class="hr">
+  </div>
+  </footer>
+    <script>
+function filterProducts() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const products = document.getElementsByClassName('product-item');
+
+  for (let i = 0; i < products.length; i++) {
+    const text = products[i].innerText.toLowerCase();
+    if (text.includes(input)) {
+      products[i].style.display = "block";
+    } else {
+      products[i].style.display = "none";
+    }
+  }
+}
+
+  function addToCart(name, price) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+    window.location.href = "cart.html";
+  }
+</script>
+<script>
+  function addToCart(name, price) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(name + " added to cart!");
+    
+  }
+</script>
+<!-- Product Detail Popup -->
+<div id="productModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:1000;">
+  <div style="background:white; padding:20px; border-radius:10px; width:300px; text-align:center; position:relative;">
+    <span onclick="closeModal()" style="position:absolute; right:10px; top:5px; font-size:18px; cursor:pointer;">&times;</span>
+    <img id="modalImg" src="" style="width:100%; height:200px; object-fit:contain;"><br><br>
+    <h3 id="modalName"></h3>
+    <p id="modalDesc"></p>
+    <strong id="modalPrice" style="color:red;"></strong><br><br>
+    <button onclick="confirmAddToCart()" style="padding:10px 20px; background:green; color:white; border:none; border-radius:5px;">ADD TO CART</button>
+  </div>
+</div>
+<script>
+  let selectedProduct = {};
+
+  function showDetails(name, price, image, desc = "Best quality electronic product.") {
+    selectedProduct = { name, price, image, desc };
+
+    document.getElementById("modalName").innerText = name;
+    document.getElementById("modalPrice").innerText = "Price: ₹" + price;
+    document.getElementById("modalDesc").innerText = desc;
+    document.getElementById("modalImg").src = image;
+
+    document.getElementById("productModal").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("productModal").style.display = "none";
+  }
+
+  function confirmAddToCart() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(selectedProduct);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(selectedProduct.name + " added to cart!");
+    window.location.href = "cart.html";
+  }
+</script>
+
+<script src="./sidenav.js"></script>
+</body>
+</html>

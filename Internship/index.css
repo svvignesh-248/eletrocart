@@ -1,0 +1,618 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+}
+/* header section */
+.head{
+    color: brown;
+}
+#nav{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, #06049e, #0b6822, #5deb81);
+    border-radius: 5px;
+    border: 2px solid #400546;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.product-item {
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: top;
+}
+#cart{
+    color: brown;
+    margin: 25px;
+}
+#ca{
+    margin: 20px;
+}
+.buy-btn {
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.buy-btn:hover {
+  background: linear-gradient(45deg, #218838, #4fb1f3);
+  box-shadow: 0 8px 15px rgba(0, 128, 0, 0.3);
+  transform: scale(1.05);
+}
+.buy-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(69, 243, 69, 0.2);
+}
+#cart-items li {
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+#ul-1,li{
+    display: flex;
+    margin-top: 16px;
+    column-gap:10px;
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+#ul-2{
+    display: flex;
+    margin-left: 250px;
+    color:gold;
+}
+#ul-2 li{
+    color: gold;
+}
+#h1{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span{
+    color: gold;
+}
+#select{
+    background-color: transparent;
+    height: 250x;
+    color: white;
+    border: none;
+    margin-top: 0px;
+    margin-left: 8px;
+    width: 80px;
+}
+option{
+    background-color: #9bf805;
+    border:none;
+}
+#sinp{
+     margin-top: 20px;
+     margin-left: 280px;
+     height: 30px;
+     width: 550px;
+     border-radius: 5px;
+     border: 2px solid #400546;
+     padding-left: 10px;
+}
+#sinp:focus{
+    outline: none;
+}
+#sbtn{
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    border: 2px solid gold;
+    background-color: gold;
+    border-radius: 5px
+}
+#lbtn{
+
+    height: 30px;
+    width: 90px;
+    margin:5px ;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+.sidebar{
+    display:none;
+    margin-top: 0px;
+    color: white;
+    
+}
+/* side nav bar */
+#sidenav{
+    height: 260px;
+    width: 380px;
+    border: 2px solid #400546;
+    color: white;
+    background-color: #400546;
+    border-radius: 5px;
+    display: none;
+    margin-top: 20px;
+    
+}
+#sidenav #ul-1,li{
+    display: block;
+    margin-bottom: 20px;
+}
+#sidenav #ul-2{
+    margin-left: 20px;
+}
+.mark{
+    margin-left: 350px;
+}
+
+
+/* home section */
+.home-page{
+    display: flex;
+
+    text-align: start;
+    
+}
+.imagearea img{
+         margin-left: 100px;
+         margin-top: 50px;
+         
+}
+.textarea{
+    margin-left: 50px;
+    margin-top: 150px;
+}
+.textarea h1{
+    font-size:40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.textarea p{
+    margin-top: 10px;
+}
+.textarea button{
+    height: 30px;
+    width: 100px;
+    margin-top: 30px;
+    border: 2px solid #400546;
+    border-radius: 5px;
+    background-color: #400546;
+    color: white;
+}
+#section-2 .imagearea img{
+    margin-left: 20px;
+}
+#section-2 .textarea{
+    margin-left: 150px;
+}
+
+/* home section-3 */
+.container-3 i{
+    font-size: 30px;
+    margin-left: 45px;
+    color:#0733f7;
+}
+.subarea p{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.subarea input{
+    margin-top: 20px;
+    margin-left: 420px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+
+}
+.subarea button{
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    border: 2px solid gold;
+    background-color: gold;
+    border-radius: 5px;
+
+}
+/* footer section */
+footer{
+    background-color: #043eff;
+}
+.fcontainer{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 0px;
+    color: white;
+}
+.fcontainer p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fcontainer .el{
+    margin-left: 55px;
+}
+.fcontainer .el h2{
+    font-size: 30px;
+   padding-bottom: 15px;
+
+}
+.el p{
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fcontainer .ul{
+    margin-left: 55px;
+    margin-top: 8px;
+}
+.ul h2{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.ul p{
+    padding-bottom: 15px;  
+}
+.fcontainer .os{
+    margin-left: 55px;
+    margin-top: 8px;
+}
+.os h2{
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.os p{
+    padding-bottom: 15px;
+}
+.fcontainer .osn h2 {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.fcontainer .osn{
+    margin-left: 55px;
+    margin-top: 8px;
+}
+.fp{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.fp {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: white;
+    height: 100px;
+}
+.fp hr{
+    margin-bottom: 20px;
+    color: gold;
+}
+.fp .f{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.f b{
+    color: gold;
+}
+.fp .fem{
+    margin-left: 500px;
+    font-size: 25px;
+}
+.fem a{
+    color: gold;
+}
+.hr{
+    margin-top: 30px;
+}
+.osn i{
+    margin-top: 10px;
+    font-size: 30px;
+    
+}
+
+/* login Page */
+
+.container{
+            margin-top: 30px;
+            margin-left: 230px;
+        border-radius: 5px;
+        display: flex;
+
+}
+.text{
+    height: 401px;
+    width: 250px;
+    background-color: #041649;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    color: gold;
+}
+.alogin{
+    height: 380px;
+    width: 470px;
+    border-radius: 5px;
+    background-color:white;
+    border: 2px solid #400546;
+    padding-top: 20px;
+    text-align: center;
+}
+.acc{
+    color:gold;
+    font-weight: 40px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.un{
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: 3px solid gold;
+    padding-left: 15px;
+    color:#333232;
+    font-size: 20px;
+}
+.login{
+
+    height: 35px;
+    width: 100px;
+    background-color: gold;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+.h2{
+    font-size: 30px;
+}
+#acc{
+    font-size: 35px;
+}
+/* about */
+#section{
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+#product{
+    font-size: 27px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(253, 215, 0);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+#p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container-1{
+    display: flex;
+}
+.container-1 .img img{
+    height: 340px;
+    width: 740px;
+}
+#ab{
+    height: 30px;
+    width: 130px;
+    border-radius: 5px;
+    border: 2px solid #400546;
+    background-color: #400546;
+    color: white;
+    margin-left: 10px;
+}
+
+/* contact page */
+.container-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+.ph,.em,.ad{
+    height: 85px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    color: #12055a;
+    font-size:large;
+}
+i{
+    padding-left:10px;
+    padding: 8px;
+}
+.ph p{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size:medium;
+}
+.ad p{
+    font-size: medium;
+}
+#input{
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 40px;
+}
+#input .n{
+    height: 30px;
+    width: 300px;
+    padding-left: 5px;
+}
+#ms{
+    height: 120px;
+    width: 1090px;
+    margin-top: 20px;
+    margin-left: 80px;
+    padding-top: 0%;text-align: justify;
+}
+#ms,.n:focus{
+    outline: none;
+}
+#contact button{
+    height:50px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #67d0fa;
+    color: white;
+    background-color: #126b06;
+    text-align: center;
+    margin-left: 525px;
+
+}
+/* product */
+#psection h2{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+hr{
+    color: gold;
+}
+.pcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pcontainer .iphone{
+    height: 350px;
+    width: 230px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.pcontainer .iphone img{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.iphone h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.iphone p{
+    text-align: center;
+}
+.iphone .a{
+     text-align: center;
+     color: gold;
+     margin-left: 5px;
+     font-size: 15px;
+}
+.iphone em{
+    margin-left: 3px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.iphone .b{
+  margin-left: 140px;
+}
+.sub-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.sub-container .sublaptop{
+
+       margin-top: 30px;
+       height: 200px;
+       width: 400px;
+       border: 2px solid black;
+       background-color: #e4dddd;
+       border-radius: 5px;
+       display: flex;
+}
+.sublaptop .texta{
+    margin-top: 40px;
+}
+u{
+    border-bottom: 2px solid black;
+}
+.sublaptop .texta em,p,h3,button{
+    margin: 10px;
+}
+.texta button{
+    height: 30px;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+}
+.imga img{
+     margin-top: 30px;
+     margin-left: 10px;
+     border-radius: 5px;
+}
+.p2section{
+    display: flex;
+}
+.p2section .pro{
+    height: 360px;
+    width: 210px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+.pro .a{
+    color: gold;
+}
+.pro em{
+    margin-right: 110px;
+}
+/*-------------*/
+.gadgets{
+    display: flex;
+    justify-content: space-around;
+}
+.gadgets .hg{
+    height: 190px;
+    width: 260px;
+    border: 2px solid black;
+    color:white;
+    border-radius: 5px;
+    background-image: url(./hg.jpeg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.hg h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gg{
+    background-image: url(./gg.jpeg);
+    background-size: cover;
+}
+#eg{
+    background-image: url(./eg.jpeg);
+    background-size:cover ;
+}
+#p2section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
